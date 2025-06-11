@@ -938,69 +938,49 @@ document.addEventListener("DOMContentLoaded", () => {
 </footer>
 
 <style>
-/* 設置自訂字體 - 使用 Google 字體 */
+/* 引入字體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 
-/* 公司標誌部分樣式 */
-.company-logo {
-    text-align: left;
-    margin: 0;
-}
-
-.company-logo p {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 1.5em; /* 字體大小 */
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    background: transparent;
-    padding: 3px 0;
-}
-    
-
-/* 引入辰魚落雁體字體 */
+/* 引入辰魚落雁體字體（實際網頁上需有正確字體） */
 @import url('https://fonts.googleapis.com/css2?family=ChenYu&display=swap');
 
-/* 頁腳版權信息基礎樣式 */
+/* 頁腳區塊 */
 .footer-info {
     text-align: center;
-    font-family: 'ChenYu', serif; /* 使用辰魚落雁體 */
+    font-family: 'ChenYu', serif;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
     padding: 20px 10px;
     margin-top: 40px;
 }
 
+/* 每一行版權文字 */
 .footer-text {
-    display: inline-block;
-    font-size: clamp(12px, 2vw. 20px);
-    white-space: nowrap;
-    overflow: hidden;
-    text-align; center;
-    max-width: 100%
-    box-sizing: border-box;
+    display: block;
+    font-size: clamp(14px, 2vw, 18px); /* 自適應大小，手機不會太小，桌機不會太大 */
+    text-align: center;
     color: #333;
     line-height: 1.6;
     margin: 5px 0;
 }
 
+/* 字體加粗 */
 .footer-text strong {
     font-weight: bold;
 }
 
+/* 顯眼強調色 */
 .highlight {
     color: #555;
 }
 
-/* 響應式設計 - 手機螢幕 */
+/* 響應式設計 */
 @media (max-width: 600px) {
     .footer-info {
-        padding: 10px;
+        padding: 15px 5px;
     }
     .footer-text {
-        font-size: 16px; /* 稍微增大字體，避免過大 */
+        font-size: 16px;
     }
 }
 </style>
